@@ -16,7 +16,7 @@ from helper_func import subscribed, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
 
 
-
+START_TXT = "ʜɪ {}, ɪ ᴀᴍ ᴀ ᴩᴏᴡᴇʀꜰᴜʟ ꜰɪʟᴇꜱᴛᴏʀᴇ ʙᴏᴛ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙy <a href=https://t.me/fs_updates><b>ꜰɪʟᴍ ꜱᴩᴏᴛ</b></a>
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message):
@@ -97,12 +97,11 @@ async def start_command(client: Client, message: Message):
             ]
         )
         await message.reply_text(
-            text = START_MSG.format(
-                first = message.from_user.first_name,
-                last = message.from_user.last_name,
-                username = None if not message.from_user.username else '@' + message.from_user.username,
-                mention = message.from_user.mention,
-                id = message.from_user.id
+            text=START_TXT,
+
+            reply_markup=reply_markup,
+
+            parse_mode='html'
             ),
             reply_markup = reply_markup,
             disable_web_page_preview = True,
@@ -154,7 +153,19 @@ async def not_joined(client: Client, message: Message):
         quote = True,
         disable_web_page_preview = True
     )
-@Bot.
+@Client.on_callback_query()
+async def cb_handler(client: Client, query: CallbackQuery):
+    elif query.data == "help":
+        buttons = [[
+            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=START_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+        
 
 @Bot.on_message(filters.command('users') & filters.private & filters.user(ADMINS))
 async def get_users(client: Bot, message: Message):
@@ -207,3 +218,4 @@ Unsuccessful: <code>{unsuccessful}</code></b>"""
         msg = await message.reply(REPLY_ERROR)
         await asyncio.sleep(8)
         await msg.delete()
+
