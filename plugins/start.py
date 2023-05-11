@@ -88,8 +88,11 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
+                    InlineKeyboardButton('ᴜᴩᴅᴀᴛꜱ', url='https://t.me/fs_updates'),
+                    InlineKeyboardButton('ɢʀᴏᴜᴩ', url='https://t.me/fschats')
+                    ],[
+                    InlineKeyboardButton('ʜᴇʟᴩ', callback_data='help')
+                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                 ]
             ]
         )
@@ -151,6 +154,7 @@ async def not_joined(client: Client, message: Message):
         quote = True,
         disable_web_page_preview = True
     )
+@Bot.
 
 @Bot.on_message(filters.command('users') & filters.private & filters.user(ADMINS))
 async def get_users(client: Bot, message: Message):
