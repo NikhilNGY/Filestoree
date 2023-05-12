@@ -43,7 +43,7 @@ ABOUT_TXT = f"""<b>✮ 𝙼𝚈 𝙽𝙰𝙼𝙴:  <a href=https://t.me/{}>{}</a
 
 <b>✮ 𝚂𝙰𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴: <a href=https://t.me/Zinan100pbot>ᴍᴜʜᴀᴍᴍᴀᴅ ᴢɪɴᴀɴ</a></b>
 
-"""
+<b>✮ 𝚂𝙰𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴: <a href=https://t.me/Zinan100pbot>ᴍᴜʜᴀᴍᴍᴀᴅ ᴢɪɴᴀɴ</a></b>"""
 
 START_TXT = f"""ʜɪ {}, ɪ ᴀᴍ ᴀ ᴩᴏᴡᴇʀꜰᴜʟ ꜰɪʟᴇꜱᴛᴏʀᴇ ʙᴏᴛ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙy <a href=https://t.me/fs_updates><b>ꜰɪʟᴍ ꜱᴩᴏᴛ</b></a>"""
 
