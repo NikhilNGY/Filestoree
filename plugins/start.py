@@ -98,9 +98,7 @@ async def start_command(client: Client, message: Message):
         )
         await message.reply_text(
             text=START_TXT,
-
             reply_markup=reply_markup,
-
             parse_mode='html'
             ),
             reply_markup = reply_markup,
