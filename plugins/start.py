@@ -153,19 +153,6 @@ async def not_joined(client: Client, message: Message):
         quote = True,
         disable_web_page_preview = True
     )
-@Client.on_callback_query()
-async def cb_handler(client: Client, query: CallbackQuery):
-    elif query.data == "help":
-        buttons = [[
-            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='start')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=START_TXT,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-        
 
 @Bot.on_message(filters.command('users') & filters.private & filters.user(ADMINS))
 async def get_users(client: Bot, message: Message):
