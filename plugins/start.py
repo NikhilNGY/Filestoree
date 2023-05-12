@@ -100,11 +100,7 @@ async def start_command(client: Client, message: Message):
             text=START_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
-            ),
-            reply_markup = reply_markup,
-            disable_web_page_preview = True,
-            quote = True
-        )
+            )
         return
 
     
