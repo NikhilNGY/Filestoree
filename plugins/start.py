@@ -91,7 +91,7 @@ async def start_command(client: Client, message: Message):
                     InlineKeyboardButton('ᴜᴩᴅᴀᴛꜱ', url='https://t.me/fs_updates'),
                     InlineKeyboardButton('ɢʀᴏᴜᴩ', url='https://t.me/fschats')
                     ],[
-                    InlineKeyboardButton('ʜᴇʟᴩ', callback_data='help')
+                    InlineKeyboardButton('ʜᴇʟᴩ', callback_data='help'),
                     InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                 ]
             ]
