@@ -45,6 +45,8 @@ ABOUT_TXT = """<b>✮ 𝙼𝚈 𝙽𝙰𝙼𝙴:  <a href=https://t.me/{}>{}</a>
 
 """
 
+START_TXT = """ʜɪ {}, ɪ ᴀᴍ ᴀ ᴩᴏᴡᴇʀꜰᴜʟ ꜰɪʟᴇꜱᴛᴏʀᴇ ʙᴏᴛ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙy <a href=https://t.me/fs_updates><b>ꜰɪʟᴍ ꜱᴩᴏᴛ</b></a>"""
+
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
@@ -73,7 +75,38 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             parse_mode='html'
 
         )
-        
+    if query.data == "start":
+        reply_markup = InlineKeyboardMarkup(
+
+            [
+
+                [
+
+                    InlineKeyboardButton('ᴜᴩᴅᴀᴛꜱ', url='https://t.me/fs_updates'),
+
+                    InlineKeyboardButton('ɢʀᴏᴜᴩ', url='https://t.me/fschats')
+
+                    ],[
+
+                    InlineKeyboardButton('ʜᴇʟᴩ', callback_data='help')
+
+                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+
+                ]
+
+            ]
+
+        )
+
+        await query.message.edit_text(
+
+            text=START_TXT,
+
+            reply_markup=reply_markup,
+
+            parse_mode='html'
+
+            )
     elif data == "close":
         await query.message.delete()
         try:
