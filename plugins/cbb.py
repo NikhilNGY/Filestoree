@@ -29,7 +29,9 @@ HELP_TXT = f"""➤ 𝐇𝐞𝐥𝐩: 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝕭�
 
 ABOUT_TXT = f"""<b>✮ 𝙼𝚈 𝙽𝙰𝙼𝙴:  <a href=https://t.me/{}>{}</a></b>
 
-<b>✮ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/Zinan100pbot>ᴍᴜʜᴀᴍᴍᴀᴅ ᴢɪɴᴀɴ</a></b>"""
+<b>✮ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/Zinan100pbot>ᴍᴜʜᴀᴍᴍᴀᴅ ᴢɪɴᴀɴ</a></b>
+
+𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› ᴍᴜʜᴀᴍᴍᴀᴅ ᴢɪɴᴀɴ"""
 
 START_TXT = f"""ʜɪ {}, ɪ ᴀᴍ ᴀ ᴩᴏᴡᴇʀꜰᴜʟ ꜰɪʟᴇꜱᴛᴏʀᴇ ʙᴏᴛ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙy <a href=https://t.me/fs_updates><b>ꜰɪʟᴍ ꜱᴩᴏᴛ</b></a>"""
 
