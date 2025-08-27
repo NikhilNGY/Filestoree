@@ -54,11 +54,6 @@ CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
 
-# ---------- Auto Delete ----------
-AUTO_DELETE_MODE = is_enabled(environ.get("AUTO_DELETE_MODE"), True)
-AUTO_DELETE = int(environ.get("AUTO_DELETE", "30"))          # minutes
-AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800"))  # seconds
-
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
