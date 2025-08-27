@@ -50,13 +50,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                     InlineKeyboardButton('ᴜᴩᴅᴀᴛꜱ', url='https://t.me/KR_Picture'),
 
                     InlineKeyboardButton('ɢʀᴏᴜᴩ', url='https://t.me/+x6OfRDdUPrUwZTZl')
-
-                    ],[
-
-                    InlineKeyboardButton('ʜᴇʟᴩ', callback_data='about'),
-
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='help')
-
+                
                 ]
 
             ]
