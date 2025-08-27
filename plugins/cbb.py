@@ -36,13 +36,9 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
 
         await query.message.edit_text(
-
             text=ABOUT_TXT,
-
             reply_markup=reply_markup,
-
             parse_mode='html'
-
         )
     if query.data == "start":
         reply_markup = InlineKeyboardMarkup(
@@ -68,13 +64,9 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         )
 
         await query.message.edit_text(
-
             text=START_TXT,
-
             reply_markup=reply_markup,
-
             parse_mode='html'
-
             )
     elif data == "close":
         await query.message.delete()
