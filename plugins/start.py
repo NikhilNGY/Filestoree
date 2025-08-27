@@ -90,9 +90,6 @@ async def start_command(client: Client, message: Message):
                 [
                     InlineKeyboardButton('ᴜᴩᴅᴀᴛꜱ', url='https://t.me/KR_Picture'),
                     InlineKeyboardButton('ɢʀᴏᴜᴩ', url='https://t.me/+x6OfRDdUPrUwZTZl')
-                    ],[
-                    InlineKeyboardButton('ʜᴇʟᴩ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                 ]
             ]
         )
