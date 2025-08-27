@@ -15,17 +15,13 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(
 
             [
-
                 [
-
                     InlineKeyboardButton('ᴜᴩᴅᴀᴛꜱ', url='https://t.me/KR_Picture'),
-
                     InlineKeyboardButton('ɢʀᴏᴜᴩ', url='https://t.me/+x6OfRDdUPrUwZTZl')
-                
+                     ],[
+                    InlineKeyboardButton('Any Issue Contat', url='https://t.me/Nikhil5757h')
                 ]
-
             ]
-
         )
 
         await query.message.edit_text(
