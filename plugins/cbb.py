@@ -23,13 +23,13 @@ HELP_TXT = f"""➤ 𝐇𝐞𝐥𝐩: 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝕭�
 
 ⪼ 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 ›
 
-/batch https://t.me/fs_updates/3 https://t.me/fs_updates/8
+/batch https://t.me/KR_Picture
 
 𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› ᴍᴜʜᴀᴍᴍᴀᴅ ᴢɪɴᴀɴ"""
 
 ABOUT_TXT = f"""✮ 𝙼𝚈 𝙽𝙰𝙼𝙴"""
 
-START_TXT = f"""ʜɪ {}, ɪ ᴀᴍ ᴀ ᴩᴏᴡᴇʀꜰᴜʟ ꜰɪʟᴇꜱᴛᴏʀᴇ ʙᴏᴛ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙy <a href=https://t.me/fs_updates><b>ꜰɪʟᴍ ꜱᴩᴏᴛ</b></a>"""
+START_TXT = f"""Friends.......🖤 We have already lost many channels due to copyright... So join us by giving your support, cooperation and blessings to this new channel of ours 🙏🙏"""
 
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
@@ -66,9 +66,9 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 
                 [
 
-                    InlineKeyboardButton('ᴜᴩᴅᴀᴛꜱ', url='https://t.me/fs_updates'),
+                    InlineKeyboardButton('ᴜᴩᴅᴀᴛꜱ', url='https://t.me/KR_Picture'),
 
-                    InlineKeyboardButton('ɢʀᴏᴜᴩ', url='https://t.me/fschats')
+                    InlineKeyboardButton('ɢʀᴏᴜᴩ', url='https://t.me/+x6OfRDdUPrUwZTZl')
 
                     ],[
 
