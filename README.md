@@ -132,6 +132,28 @@ python3 main.py
 #### CUSTOM_STATS
 
 * `{uptime}` - Bot Uptime
+* 
+
+
+<details><summary>Deploy To Render</summary>
+<br>
+<b>
+Use these commands:
+<br>
+<br>
+• Build Command: <code>pip3 install -U -r requirements.txt</code>
+<br>
+<br>
+• Start Command: <code>python3 bot.py</code>
+<br>
+<br>
+<b>Click on the below button to deploy on render.</b>
+<br>
+<br>
+<a href="https://render.com/deploy?repo=https://github.com/NikhilNGY/Filestoree/tree/main">
+<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+</a>
+</details>
 
 
 ## Support   
