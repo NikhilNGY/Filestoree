@@ -1,6 +1,6 @@
 services:
-  - name: auto-filter-bot
-    type: web
+  - name: Filestoree
+    type: worker
     env: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python bot.py"
