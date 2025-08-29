@@ -91,3 +91,6 @@ fastapi[standard]
 ultralytics
 boto3
 python-jose[cryptography]
+cloudscraper
+colorama
+asyncio
