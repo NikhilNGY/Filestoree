@@ -87,3 +87,7 @@ youtube-search
 youtube-search-python==1.4.6
 yt-dlp
 ytthumb
+fastapi[standard]
+ultralytics
+boto3
+python-jose[cryptography]
