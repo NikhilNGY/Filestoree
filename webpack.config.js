@@ -1,26 +1,44 @@
 const path = require('path');
-const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const mode = process.env.NODE_ENV || 'production';
+const mode = process.env.NODE_ENV || 'development';
 
 module.exports = {
-  output: {
-    path: path.join(__dirname, 'dist'),
-  },
+  entry: './src/index.tsx', // main entry file
   mode,
+  devtool: mode === 'development' ? 'inline-source-map' : false,
+  output: {
+    filename: '[name].[contenthash].js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true, // clear dist before build
+  },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
-    plugins: [],
   },
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'ts-loader',
-        options: {
-          transpileOnly: true,
-        },
+        use: 'ts-loader',
+        exclude: /node_modules/,
       },
     ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html', // auto inject bundle
+    }),
+  ],
+  devServer: {
+    static: path.join(__dirname, 'dist'),
+    port: 3000,
+    hot: true,
+    open: true,
+    compress: true,
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all', // better caching
+    },
   },
 };
