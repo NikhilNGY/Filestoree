@@ -44,7 +44,6 @@ apscheduler==3.11.0
 colorama==0.4.6
 humanize==4.10.0
 wheel==0.44.0
-asyncio==3.4.3
 
 # --- For AI / APIs ----------- #
 openai==1.45.1
